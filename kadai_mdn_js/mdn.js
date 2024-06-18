@@ -1,10 +1,12 @@
-const today = new Date();
+var currentDate = new Date()
 
-const options = {
-  year: "numeric",
-  month: "long",
-  day: "numeric",
-};
+var year = currentDate.getFullYear()
 
-console.log(today.toLocaleDateString("ja-JP"));
+var month = currentDate.getMonth()
+
+var date = currentDate.getDate()
+
+console.log(year+"年",(month+1)+"月",date+"日")
+
+
 
